@@ -76,7 +76,7 @@ hakeem• Design System Angular is built on top of the much awaited Bootstrap 4 
 
 ## Deploy
 
-:rocket: You can deploy angular app on your own server ex: IIS, Docker...
+:rocket: You can deploy angular app on your own server ex: AWS, IIS ...
 
 ## File Structure
 Within the download you'll find the following directories and files:
