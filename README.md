@@ -13,15 +13,15 @@
 - **NLP**: Utilizes **Allam LLM** for language understanding and response generation, **FAISS** for high-speed vector search, and **Elasticsearch** for indexing and querying large volumes of legal data.
 - **Deployment**: Containerized with **Docker** and deployed on **AWS** for scalability and reliability.
 
-# Install Python using MiniConda
+## Install Python using MiniConda
 Download and install MiniConda from here
 Create a new environment using the following command:
 $ conda create -n mini-rag python=3.8
 
-# Activate the environment:
+## Activate the environment:
 ```$ conda activate mini-rag```
 
-# (Optional) Setup you command line interface for better readability
+## (Optional) Setup you command line interface for better readability
 ```export PS1="\[\033[01;32m\]\u@\h:\w\n\[\033[00m\]\$ "```
 
 ## Installation
@@ -32,10 +32,10 @@ $ conda create -n mini-rag python=3.8
 ```$ cp .env.example .env```
 Set your environment variables in the .env file. Like OPENAI_API_KEY value.
 
-# Run Docker Compose Services
+## Run Docker Compose Services
 ```$ cd docker```
 ```$ cp .env.example .env```
-# update .env with your credentials
+## update .env with your credentials
 ```$ cd docker```
 ```$ sudo docker compose up -d```
 
@@ -46,7 +46,7 @@ Set your environment variables in the .env file. Like OPENAI_API_KEY value.
 ## POSTMAN Collection
 Download the POSTMAN collection from /assets/mini-rag-app.postman_collection.json
 
-# Hakeem-Application Frontend
+## Hakeem-Application Frontend
 
 hakeem• Design  System Angular will help you create a clean and simple website that is a perfect fit for today's black design. It is built using the 12 column grid system, with components designed to fit together perfectly. It makes use of bold colours, beautiful typography, clear photography and spacious arrangements.
 
