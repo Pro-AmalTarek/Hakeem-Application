@@ -1,0 +1,86 @@
+<div class="section section-nucleo-icons">
+    <img class="path" src="assets/img/path1.png" />
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-12">
+                <h1 class="title">البحث عن القضايا</h1>
+                <h4 class="description">
+                    <div class="input-group">
+                        <input  [(ngModel)]="newQuestion" class="form-control search" 
+                            placeholder="اسأل حكيم... مثال: الحلف كذب" type="text"
+                            (keydown.enter)="sendMessage()">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text search-text"><i
+                                        class="fa fa-search"></i></span>
+                            </div>
+                    </div>
+                </h4>
+                <div id="accordion">
+                  <div class="card" *ngFor="let case of cases; let i = index">
+                    <div class="card-header" [attr.id]="'heading' + i">
+                      <h5 class="mb-0">
+                        <button 
+                          class="btn btn-link" 
+                          data-toggle="collapse" 
+                          [attr.data-target]="'#collapse' + i" 
+                          aria-expanded="true" 
+                          [attr.aria-controls]="'collapse' + i"
+                        >
+                          {{ case.title }}
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div 
+                      [attr.id]="'collapse' + i" 
+                      class="collapse" 
+                      [attr.aria-labelledby]="'heading' + i" 
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body" [innerHTML]="case.content">
+                        <!-- <a href="#myModal" data-toggle="modal" data-target="#myModal">اقرأ المزيد</a> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>                
+                <div class="btn-wrapper">
+                    <button class="btn btn-danger btn-round mr-1" (click)="sendMessage()">
+                        {{cases.length > 0 ? 'ابحث مرة أخرى': 'ابحث'}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div aria-hidden="true" aria-labelledby="myModalLabel" bsModal class="modal fade" #myModal="bs-modal" id="myModal"
+role="dialog" tabindex="-1">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header justify-content-center">
+      <button aria-hidden="true" class="close" data-dismiss="modal" type="button" (click)="myModal.hide()">
+        <i class="tim-icons icon-simple-remove"> </i>
+      </button>
+      <h4 class="title title-up">Modal title</h4>
+    </div>
+    <div class="modal-body">
+      <p>
+        Far far away, behind the word mountains, far from the countries
+        Vokalia and Consonantia, there live the blind texts. Separated
+        they live in Bookmarksgrove right at the coast of the Semantics, a
+        large language ocean. A small river named Duden flows by their
+        place and supplies it with the necessary regelialia. It is a
+        paradisematic country, in which roasted parts of sentences fly
+        into your mouth.
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-danger" data-dismiss="modal" type="button" (click)="myModal.hide()">
+        اغلق
+      </button>
+    </div>
+  </div>
+</div>
+</div> -->

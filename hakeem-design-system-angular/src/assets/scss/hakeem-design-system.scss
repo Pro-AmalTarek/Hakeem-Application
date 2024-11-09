@@ -1,0 +1,117 @@
+/*
+=========================================================
+* hakeem Design System Angular - v1.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/hakeem-design-system-angular
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ */
+
+// Core
+
+@import "hakeem-design-system/custom/functions";
+@import "hakeem-design-system/bootstrap/functions";
+
+@import "hakeem-design-system/custom/variables";
+@import "hakeem-design-system/bootstrap/variables";
+
+@import "hakeem-design-system/custom/mixins";
+@import "hakeem-design-system/bootstrap/mixins";
+
+// Bootstrap components
+
+@import "hakeem-design-system/bootstrap/root";
+@import "hakeem-design-system/bootstrap/reboot";
+@import "hakeem-design-system/bootstrap/type";
+@import "hakeem-design-system/bootstrap/images";
+@import "hakeem-design-system/bootstrap/code";
+@import "hakeem-design-system/bootstrap/grid";
+@import "hakeem-design-system/bootstrap/tables";
+@import "hakeem-design-system/bootstrap/forms";
+@import "hakeem-design-system/bootstrap/buttons";
+@import "hakeem-design-system/bootstrap/transitions";
+@import "hakeem-design-system/bootstrap/dropdown";
+@import "hakeem-design-system/bootstrap/button-group";
+@import "hakeem-design-system/bootstrap/input-group";
+@import "hakeem-design-system/bootstrap/custom-forms";
+@import "hakeem-design-system/bootstrap/nav";
+@import "hakeem-design-system/bootstrap/navbar";
+@import "hakeem-design-system/bootstrap/card";
+@import "hakeem-design-system/bootstrap/breadcrumb";
+@import "hakeem-design-system/bootstrap/pagination";
+@import "hakeem-design-system/bootstrap/badge";
+@import "hakeem-design-system/bootstrap/jumbotron";
+@import "hakeem-design-system/bootstrap/alert";
+@import "hakeem-design-system/bootstrap/progress";
+@import "hakeem-design-system/bootstrap/media";
+@import "hakeem-design-system/bootstrap/list-group";
+@import "hakeem-design-system/bootstrap/close";
+@import "hakeem-design-system/bootstrap/modal";
+@import "hakeem-design-system/bootstrap/tooltip";
+@import "hakeem-design-system/bootstrap/popover";
+@import "hakeem-design-system/bootstrap/carousel";
+@import "hakeem-design-system/bootstrap/utilities";
+@import "hakeem-design-system/bootstrap/print";
+
+// Custom components
+
+@import "hakeem-design-system/custom/alerts.scss";
+@import "hakeem-design-system/custom/buttons.scss";
+@import "hakeem-design-system/custom/dropdown.scss";
+@import "hakeem-design-system/custom/footer.scss";
+@import "hakeem-design-system/custom/forms.scss";
+@import "hakeem-design-system/custom/images.scss";
+@import "hakeem-design-system/custom/modal.scss";
+@import "hakeem-design-system/custom/navbar.scss";
+@import "hakeem-design-system/custom/type.scss";
+@import "hakeem-design-system/custom/icons.scss";
+@import "hakeem-design-system/custom/tables";
+@import "hakeem-design-system/custom/checkboxes-radio";
+@import "hakeem-design-system/custom/fixed-plugin";
+@import "hakeem-design-system/custom/pagination.scss";
+@import "hakeem-design-system/custom/misc.scss";
+@import "hakeem-design-system/custom/rtl.scss";
+@import "hakeem-design-system/custom/input-group.scss";
+@import "hakeem-design-system/custom/example-pages.scss";
+@import "hakeem-design-system/custom/progress.scss";
+@import "hakeem-design-system/custom/badge.scss";
+@import "hakeem-design-system/custom/pills.scss";
+@import "hakeem-design-system/custom/tabs.scss";
+@import "hakeem-design-system/custom/info-areas.scss";
+
+// Sections
+@import "hakeem-design-system/custom/sections.scss";
+
+// Vendor / Plugins
+
+@import "hakeem-design-system/custom/vendor/plugin-perfect-scrollbar.scss";
+@import "hakeem-design-system/custom/vendor/plugin-animate-bootstrap-notify.scss";
+@import "hakeem-design-system/custom/vendor/plugin-bootstrap-switch.scss";
+@import "hakeem-design-system/custom/vendor/plugin-nouislider.scss";
+@import "hakeem-design-system/custom/vendor/plugin-datetimepicker.scss";
+
+// Cards
+
+@import "hakeem-design-system/custom/card";
+@import "hakeem-design-system/custom/cards/card-chart";
+@import "hakeem-design-system/custom/cards/card-map";
+@import "hakeem-design-system/custom/cards/card-user";
+@import "hakeem-design-system/custom/cards/card-task";
+@import "hakeem-design-system/custom/cards/card-plain";
+@import "hakeem-design-system/custom/cards/card-register";
+@import "hakeem-design-system/custom/cards/card-stats";
+@import "hakeem-design-system/custom/cards/card-chart";
+
+// Angular changes
+@import "hakeem-design-system/angular/tabs";
+@import "hakeem-design-system/angular/pills";
+@import "hakeem-design-system/angular/alerts";
+@import "hakeem-design-system/angular/datepicker";
+@import "hakeem-design-system/angular/example-pages";

@@ -1,0 +1,24 @@
+<div class="chat-robot-container">
+    <div class="robot-img">
+        <img src="../../../assets/img/robot.png" />
+    </div>
+    <div class="chat-container" id="chatContainer">
+        <!-- Chat history will appear here -->
+        <div class="overflow">
+        <div *ngFor="let message of messages" class="chat-message" [ngClass]="message.sender">
+            <i class="tim-icons  chat-icon" [ngClass]="message.sender == 'bot' ? 'icon-atom' : 'icon-single-02'"> </i>
+
+            <div class="chat-text"> {{ message.text }}
+            </div>
+        </div>
+    </div>
+        <form (submit)="sendMessag($event)">
+            <div class="input-group">
+                <textarea [(ngModel)]="newMessage" (keydown.enter)="sendMessag($event)" required name="newMessage" rows="1" class="form-control"
+                    placeholder="اسأل حكيم ...">
+                </textarea>
+                <button class="btn btn-sm btn-danger" id="askHakeem" type="submit">اسأل</button>
+            </div>
+        </form>
+    </div>
+</div>
